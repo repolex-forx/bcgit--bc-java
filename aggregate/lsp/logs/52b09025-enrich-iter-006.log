@@ -1,0 +1,16 @@
+[2026-04-14T21:21:32Z] === ENRICH ITERATION 6 START | repo=bcgit/bc-java sha=52b09025 ===
+[2026-04-14T21:21:32Z] [iter=6] PHASE START: enrich repo=bcgit/bc-java sha=52b09025 runlog=/home/runner/work/forx/forx/storage/aggregate/lsp/logs/52b09025-enrich-iter-006.log output=/home/runner/work/forx/forx/storage/aggregate/lsp/52b0902592e770b8116f80f2eab7a4048b589d7d.nq.gz
+[2026-04-14T21:21:32Z] [iter=6] Step 1: Loading AST into disk-backed store mem_mb=76 MB
+[2026-04-14T21:26:55Z] [iter=6] AST store loaded triples=25282906 load_secs=313 mem_mb=1159 MB
+[2026-04-14T21:26:55Z] [iter=6] Step 2: Finding LSP targets mem_mb=1159 MB
+[2026-04-14T21:29:08Z] [iter=6] LSP targets found call_sites=220533 imports=42207 extends=4951 implements=0 secs=132
+[2026-04-14T21:29:24Z] [iter=6] Loaded checkpoint partial graph triples=331483
+[2026-04-14T21:31:25Z] [iter=6] Step 2.7: Building position index (one-shot, shared across resolvers) mem_mb=1537 MB
+[2026-04-14T21:34:25Z] [iter=6] Position index built positions=1682117 nodes_with_types=2091689 secs=180 mem_mb=4778 MB
+[2026-04-14T21:34:25Z] [iter=6] Step 3: Starting LSP resolution mem_mb=4778 MB already_completed_types=[] already_completed_files=2500
+[2026-04-14T21:34:25Z] [iter=6] Resolving target type target_type=call_site count=220533
+[2026-04-14T21:34:32Z] [iter=6] HEARTBEAT target_type=call_site elapsed_min=13.0 files_done=0 resolved=0 errors=0 current=core/src/main/java/org/bouncycastle/asn1/x509/RoleSyntax.java
+[2026-04-14T21:34:38Z] [iter=6] CHECKPOINT TRIGGERED elapsed_min=13.1 files_completed=3000 new_files_this_iter=500 mem_mb=4794 MB
+[2026-04-14T21:34:38Z] [iter=6] Writing partial enrichment graph path=/home/runner/work/forx/forx/storage/aggregate/lsp/52b0902592e770b8116f80f2eab7a4048b589d7d.nq.gz triples=341114
+[2026-04-14T21:34:45Z] [iter=6] Checkpoint written, exiting with code 7
+[2026-04-14T21:34:45Z] [iter=6] PHASE END: enrich (checkpointed) elapsed_s=786 elapsed_min=13.1 files_completed=3000
