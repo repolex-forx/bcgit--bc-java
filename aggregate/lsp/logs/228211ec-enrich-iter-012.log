@@ -1,0 +1,18 @@
+[2026-04-16T07:04:55Z] === ENRICH ITERATION 12 START | repo=bcgit/bc-java sha=228211ec ===
+[2026-04-16T07:04:55Z] [iter=12] PHASE START: enrich repo=bcgit/bc-java sha=228211ec runlog=/home/runner/work/forx/forx/storage/aggregate/lsp/logs/228211ec-enrich-iter-012.log output=/home/runner/work/forx/forx/storage/aggregate/lsp/228211ecb973fe87fdd0fc4ab16ba0446ec1a29c.nq.gz
+[2026-04-16T07:04:55Z] [iter=12] Step 1: Loading AST into disk-backed store mem_mb=77 MB
+[2026-04-16T07:14:03Z] [iter=12] AST store loaded triples=40763629 load_secs=531 mem_mb=1209 MB
+[2026-04-16T07:14:03Z] [iter=12] Step 2: Finding LSP targets mem_mb=1209 MB
+[2026-04-16T07:17:33Z] [iter=12] LSP targets found call_sites=361233 imports=66977 extends=8151 implements=0 secs=209
+[2026-04-16T07:17:59Z] [iter=12] Loaded checkpoint partial graph triples=561446
+[2026-04-16T07:21:16Z] [iter=12] Step 2.7: Building position index (one-shot, shared across resolvers) mem_mb=2252 MB
+[2026-04-16T07:26:01Z] [iter=12] Position index built positions=2702223 nodes_with_types=3373231 secs=284 mem_mb=7374 MB
+[2026-04-16T07:26:01Z] [iter=12] Step 3: Starting LSP resolution mem_mb=7374 MB already_completed_types=[] already_completed_files=5500
+[2026-04-16T07:26:01Z] [iter=12] Resolving target type target_type=call_site count=361233
+[2026-04-16T07:26:14Z] [iter=12] HEARTBEAT target_type=call_site elapsed_min=21.3 files_done=0 resolved=0 errors=0 current=pkix/src/main/jdk1.4/org/bouncycastle/cms/jcajce/CMSInputAEADDecryptor.java
+[2026-04-16T07:26:16Z] [iter=12] Target type resolved target_type=call_site resolved=0 errors=0 secs=15 mem_mb=7376 MB
+[2026-04-16T07:26:16Z] [iter=12] Resolving target type target_type=import_statement count=66977
+[2026-04-16T07:26:23Z] [iter=12] CHECKPOINT TRIGGERED elapsed_min=21.5 files_completed=6000 new_files_this_iter=500 mem_mb=7377 MB
+[2026-04-16T07:26:23Z] [iter=12] Writing partial enrichment graph path=/home/runner/work/forx/forx/storage/aggregate/lsp/228211ecb973fe87fdd0fc4ab16ba0446ec1a29c.nq.gz triples=563542
+[2026-04-16T07:26:35Z] [iter=12] Checkpoint written, exiting with code 7
+[2026-04-16T07:26:35Z] [iter=12] PHASE END: enrich (checkpointed) elapsed_s=1288 elapsed_min=21.5 files_completed=6000
