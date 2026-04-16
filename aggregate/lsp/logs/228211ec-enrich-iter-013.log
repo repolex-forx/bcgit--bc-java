@@ -1,0 +1,20 @@
+[2026-04-16T07:34:19Z] === ENRICH ITERATION 13 START | repo=bcgit/bc-java sha=228211ec ===
+[2026-04-16T07:34:19Z] [iter=13] PHASE START: enrich repo=bcgit/bc-java sha=228211ec runlog=/home/runner/work/forx/forx/storage/aggregate/lsp/logs/228211ec-enrich-iter-013.log output=/home/runner/work/forx/forx/storage/aggregate/lsp/228211ecb973fe87fdd0fc4ab16ba0446ec1a29c.nq.gz
+[2026-04-16T07:34:19Z] [iter=13] Step 1: Loading AST into disk-backed store mem_mb=77 MB
+[2026-04-16T07:43:16Z] [iter=13] AST store loaded triples=40763629 load_secs=521 mem_mb=1212 MB
+[2026-04-16T07:43:16Z] [iter=13] Step 2: Finding LSP targets mem_mb=1212 MB
+[2026-04-16T07:46:51Z] [iter=13] LSP targets found call_sites=361233 imports=66977 extends=8151 implements=0 secs=215
+[2026-04-16T07:47:18Z] [iter=13] Loaded checkpoint partial graph triples=563542
+[2026-04-16T07:50:37Z] [iter=13] Step 2.7: Building position index (one-shot, shared across resolvers) mem_mb=2308 MB
+[2026-04-16T07:55:22Z] [iter=13] Position index built positions=2702223 nodes_with_types=3373231 secs=285 mem_mb=7475 MB
+[2026-04-16T07:55:22Z] [iter=13] Step 3: Starting LSP resolution mem_mb=7475 MB already_completed_types=['call_site'] already_completed_files=6000
+[2026-04-16T07:55:22Z] [iter=13] Skipping target type (completed in previous iteration) target_type=call_site
+[2026-04-16T07:55:22Z] [iter=13] Resolving target type target_type=import_statement count=66977
+[2026-04-16T07:55:31Z] [iter=13] HEARTBEAT target_type=import_statement elapsed_min=21.2 files_done=0 resolved=0 errors=0 current=prov/src/main/java/org/bouncycastle/jcajce/interfaces/MLDSAPrivateKey.java
+[2026-04-16T07:55:34Z] [iter=13] Target type resolved target_type=import_statement resolved=0 errors=0 secs=12 mem_mb=7476 MB
+[2026-04-16T07:55:34Z] [iter=13] Resolving target type target_type=extends_clause count=8151
+[2026-04-16T07:55:41Z] [iter=13] Target type resolved target_type=extends_clause resolved=0 errors=0 secs=8 mem_mb=7476 MB
+[2026-04-16T07:56:12Z] [iter=13] Step 5: Writing final enrichment file triples=564281
+[2026-04-16T07:56:24Z] [iter=13] Enrichment file written path=/home/runner/work/forx/forx/storage/aggregate/lsp/228211ecb973fe87fdd0fc4ab16ba0446ec1a29c.nq.gz size_kb=14683
+[2026-04-16T07:56:24Z] [iter=13] Checkpoint cleared (enrichment complete)
+[2026-04-16T07:56:24Z] [iter=13] PHASE END: enrich elapsed_s=1325 elapsed_min=22.1 total_triples=564281
