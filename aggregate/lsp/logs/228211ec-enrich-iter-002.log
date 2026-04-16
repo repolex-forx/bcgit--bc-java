@@ -1,0 +1,16 @@
+[2026-04-16T01:32:43Z] === ENRICH ITERATION 2 START | repo=bcgit/bc-java sha=228211ec ===
+[2026-04-16T01:32:43Z] [iter=2] PHASE START: enrich repo=bcgit/bc-java sha=228211ec runlog=/home/runner/work/forx/forx/storage/aggregate/lsp/logs/228211ec-enrich-iter-002.log output=/home/runner/work/forx/forx/storage/aggregate/lsp/228211ecb973fe87fdd0fc4ab16ba0446ec1a29c.nq.gz
+[2026-04-16T01:32:43Z] [iter=2] Step 1: Loading AST into disk-backed store mem_mb=77 MB
+[2026-04-16T01:41:23Z] [iter=2] AST store loaded triples=40763629 load_secs=504 mem_mb=1206 MB
+[2026-04-16T01:41:23Z] [iter=2] Step 2: Finding LSP targets mem_mb=1206 MB
+[2026-04-16T01:44:53Z] [iter=2] LSP targets found call_sites=361233 imports=66977 extends=8151 implements=0 secs=210
+[2026-04-16T01:45:08Z] [iter=2] Loaded checkpoint partial graph triples=313476
+[2026-04-16T01:48:28Z] [iter=2] Step 2.7: Building position index (one-shot, shared across resolvers) mem_mb=1633 MB
+[2026-04-16T01:52:34Z] [iter=2] Position index built positions=2702223 nodes_with_types=3373231 secs=245 mem_mb=6783 MB
+[2026-04-16T01:52:34Z] [iter=2] Step 3: Starting LSP resolution mem_mb=6783 MB already_completed_types=[] already_completed_files=500
+[2026-04-16T01:52:34Z] [iter=2] Resolving target type target_type=call_site count=361233
+[2026-04-16T01:52:45Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=20.0 files_done=0 resolved=0 errors=0 current=core/src/main/java/org/bouncycastle/crypto/modes/gcm/GCMUtil.java
+[2026-04-16T01:52:58Z] [iter=2] CHECKPOINT TRIGGERED elapsed_min=20.3 files_completed=1000 new_files_this_iter=500 mem_mb=6933 MB
+[2026-04-16T01:52:58Z] [iter=2] Writing partial enrichment graph path=/home/runner/work/forx/forx/storage/aggregate/lsp/228211ecb973fe87fdd0fc4ab16ba0446ec1a29c.nq.gz triples=386766
+[2026-04-16T01:53:11Z] [iter=2] Checkpoint written, exiting with code 7
+[2026-04-16T01:53:11Z] [iter=2] PHASE END: enrich (checkpointed) elapsed_s=1216 elapsed_min=20.3 files_completed=1000
